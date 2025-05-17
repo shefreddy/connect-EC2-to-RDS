@@ -2,6 +2,20 @@
 
 This repository contains Terraform configurations to set up a secure connection between an Amazon EC2 instance and an Amazon RDS database for WordPress deployment.
 
+## Architecture
+![Alt text](ec2-rds-architecture.png)
+
+The infrastructure consists of:
+
+- **VPC**: Custom VPC with proper CIDR block allocation
+- **Subnets**: 
+  - Public subnets for EC2 instances
+  - Private subnets for RDS database
+- **EC2 Instance**: Running Amazon Linux 2 with WordPress
+- **RDS Instance**: MySQL database optimized for WordPress
+- **Security Groups**: Properly configured for secure access
+- **IAM Roles**: Minimal permissions following principle of least privilege
+
 ## Project Overview
 
 This project demonstrates how to:
@@ -21,19 +35,6 @@ Before getting started, ensure you have:
 - [AWS CLI](https://aws.amazon.com/cli/) installed and configured
 - An AWS account with appropriate permissions
 - Basic knowledge of AWS services (EC2, RDS, VPC, Security Groups)
-
-## Architecture
-![Alt text](ec2-rds-architecture.png)
-The infrastructure consists of:
-
-- **VPC**: Custom VPC with proper CIDR block allocation
-- **Subnets**: 
-  - Public subnets for EC2 instances
-  - Private subnets for RDS database
-- **EC2 Instance**: Running Amazon Linux 2 with WordPress
-- **RDS Instance**: MySQL database optimized for WordPress
-- **Security Groups**: Properly configured for secure access
-- **IAM Roles**: Minimal permissions following principle of least privilege
 
 ## Directory Structure
 
