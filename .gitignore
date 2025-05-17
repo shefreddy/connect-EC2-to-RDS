@@ -1,0 +1,30 @@
+# Ignore Terraform configuration override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore .terraform directories
+.terraform/
+
+# Ignore Terraform plan files
+*.tfplan
+*.tfplan.*
+
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+*.terraform.lock.hcl
+
+# Ignore Crash log files
+crash.log
+
+# Ignore sensitive output (optional)
+*.tfvars
+*.tfvars.json
+
+# Ignore other temporary or log files
+*.log
+
+# Exclude all .exe files (Windows providers)
+*.exe
