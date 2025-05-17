@@ -1,30 +1,20 @@
-# Ignore Terraform configuration override files
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# Local Terraform directories
+.terraform/*
 
-# Ignore .terraform directories
-.terraform/
+# Exception: Keep the dependency lock file
+!.terraform.lock.hcl
 
-# Ignore Terraform plan files
-*.tfplan
-*.tfplan.*
-
-# Ignore Terraform state files
+# Ignore state files
 *.tfstate
 *.tfstate.*
-*.terraform.lock.hcl
 
-# Ignore Crash log files
+# Ignore override files
+*.override.tf
+*.override.tf.json
+
+# Crash log files
 crash.log
 
-# Ignore sensitive output (optional)
-*.tfvars
-*.tfvars.json
-
-# Ignore other temporary or log files
-*.log
-
-# Exclude all .exe files (Windows providers)
-*.exe
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
