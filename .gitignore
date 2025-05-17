@@ -1,12 +1,10 @@
 # Local Terraform directories
 .terraform/*
 
-# Exception: Keep the dependency lock file
-!.terraform.lock.hcl
-
 # Ignore state files
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
 
 # Ignore override files
 *.override.tf
